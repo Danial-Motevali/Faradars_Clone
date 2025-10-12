@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرادرس</title>
+
+    <style>
+        body{
+            margin: 0;
+        }    
+
+        .add{
+            background-color: blue;
+            height: 50px;
+        }
+
+        .navbar{
+            background-color: red;
+            height: 56px;
+        }
+
+        #main-img{
+            height: inherit;
+        }
+
+        @media screen and (max-width: 767px) {   
+            #main-img{
+                background-image: url(./assest/6.svg);
+            } 
+        }
+
+        @media screen and (min-width: 768px) {      
+            #main-img{      
+                background-image: url(./assest/5.svg);
+            } 
+        } 
+
+        @media (min-width: 992px) {      
+            #main-img{        
+                background-image: url(./assest/3.svg);
+            } 
+        }
+
+        @media (min-width: 1200px) {    
+            #main-img{         
+                background-image: url(./assest/3.svg);
+            } 
+        } 
+    </style>
+</head>
+<body>
+    <div class="add">
+        <div id="main-img"></div>
+    </div>
+    <div class="navbar">
+        hello
+    </div>
+</body>
+</html>
