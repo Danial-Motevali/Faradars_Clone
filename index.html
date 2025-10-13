@@ -8,20 +8,21 @@
     <style>
         body{
             margin: 0;
-            width: fit-content;
         }    
 
         .add{
             height: 55px;
+            width: 100%;
         }
 
-        .navbar{
+        .navbar-div{
             background-color: red;
-            height: 56px;
+            height: inherit;
         }
 
         .addPicture{
             height: 100%;
+            width: 100%;
         }
 
         /* Phone */
@@ -34,6 +35,10 @@
             .addPicture{
                 position: relative;
                 right: 577px;
+            }
+
+            .navbar{
+                height: 98px;
             }
         }
 
@@ -52,7 +57,14 @@
         /* laptops/desktop */
         @Media only screen and (min-width: 992px)
         {
-            
+            .navbar{
+                height: 60px;
+            }
+
+            /* .addPicture{
+                position: relative;
+                right: 200px;
+            } */
         }
 
         /* large laptops and desktop */
@@ -66,13 +78,13 @@
 <body>
     <div class="add">
         <picture>
-            <source media="(min-width: 650px)" srcset="./assest/3.svg">
+            <source media="(min-width: 650px)" srcset="./assest/5.svg">
             <source media="(min-width: 465px)" srcset="./assest/6.svg">
-            <img class="addPicture" src="./assest/5.svg" alt="picture"/>
+            <img class="addPicture" src="./assest/6.svg" alt="picture"/>
         </picture>
     </div>
-        <nav>
-            <div class="navbar">
+        <nav class="navbar">
+            <div class="navbar-div">
                 hello
             </div>
         </nav>
