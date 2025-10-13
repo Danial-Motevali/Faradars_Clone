@@ -8,6 +8,7 @@
     <style>
         body{
             margin: 0;
+            width: fit-content;
         }    
 
         .add{
@@ -17,6 +18,47 @@
         .navbar{
             background-color: red;
             height: 56px;
+        }
+
+        .addPicture{
+            height: 100%;
+        }
+
+        /* Phone */
+        @Media only screen and (max-width: 600px)
+        {
+            .add{
+                height: 96px;
+            }
+
+            .addPicture{
+                position: relative;
+                right: 577px;
+            }
+        }
+
+        /* Portait tablest & Large Phone */
+        @Media only screen and (min-width: 600px)
+        {
+            
+        }
+
+        /* landscape Tablet */
+        @Media only screen and (min-width: 768px)
+        {
+
+        }
+
+        /* laptops/desktop */
+        @Media only screen and (min-width: 992px)
+        {
+            
+        }
+
+        /* large laptops and desktop */
+        @Media only screen and (min-width: 1200px)
+        {
+
         }
 
     </style>
