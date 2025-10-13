@@ -11,8 +11,7 @@
         }    
 
         .add{
-            background-color: blue;
-            height: 50px;
+            height: 55px;
         }
 
         .navbar{
@@ -20,41 +19,21 @@
             height: 56px;
         }
 
-        #main-img{
-            height: inherit;
-        }
-
-        @media screen and (max-width: 767px) {   
-            #main-img{
-                background-image: url(./assest/6.svg);
-            } 
-        }
-
-        @media screen and (min-width: 768px) {      
-            #main-img{      
-                background-image: url(./assest/5.svg);
-            } 
-        } 
-
-        @media (min-width: 992px) {      
-            #main-img{        
-                background-image: url(./assest/3.svg);
-            } 
-        }
-
-        @media (min-width: 1200px) {    
-            #main-img{         
-                background-image: url(./assest/3.svg);
-            } 
-        } 
     </style>
 </head>
 <body>
     <div class="add">
-        <div id="main-img"></div>
+        <picture>
+            <source media="(min-width: 650px)" srcset="./assest/3.svg">
+            <source media="(min-width: 465px)" srcset="./assest/6.svg">
+            <img class="addPicture" src="./assest/5.svg" alt="picture"/>
+        </picture>
     </div>
-    <div class="navbar">
-        hello
+        <nav>
+            <div class="navbar">
+                hello
+            </div>
+        </nav>
     </div>
 </body>
 </html>
