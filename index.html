@@ -63,6 +63,34 @@
             width: 139px;
         }
 
+        .lading-Picture{
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            padding-top: 32px;
+        }
+
+        .mainContent{
+            background-image: linear-gradient(to top, red, yellow);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .Title-site{
+            font-size: 28px;
+            font-family: 'IRANSans', Tahoma, Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .Title-Site-Title{
+            color: cornflowerblue;
+        }
+
+        .Title-section{
+            direction: rtl;
+        }
+
         /* Phone */
         @Media only screen and (max-width: 600px)
         {
@@ -123,5 +151,22 @@
             </div>
         </nav>
     </div>
+    <div>
+        <div class="mainContent">
+            <div class="lading-Picture">
+                <img src="./assest/MainPage.svg" alt="سلام"/>
+                <div class="Title-section">
+                    <p class="Title-site">با هزاران <span class="Title-Site-Title">اموزش </span>کاربردی فرادرس</span></p>
+                    <p>همین امروز شروع کن،</p>
+                    <p>یاد بگیر و آینده رو بساز.</p>
+                </div>
+            </div>
+            <div>
+                سلام
+            </div>
+        </div>
+        
+    </div>
+    
 </body>
 </html>
