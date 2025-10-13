@@ -6,9 +6,62 @@
     <title>فرادرس</title>
 
     <style>
+
+        @font-face {
+            font-family: 'IRANSans';
+            src: url('fonts/IRANSans.woff2') format('woff2'),
+                url('fonts/IRANSans.woff') format('woff'),
+                url('fonts/IRANSans.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body{
             margin: 0;
+            font-family: 'IRANSans', Tahoma, Arial, 
         }    
+
+        .add{
+            height: 56px;
+            overflow: hidden;
+        }
+
+        .addPicture{
+            height: inherit;
+            position: relative;
+            right: 935px;
+        }
+
+        .Jashvare{
+            height: inherit;
+        }
+
+        .time-number{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Timer{
+            direction: rtl;
+            position: relative;
+            bottom: 55px;
+            right: 1207px;
+            color: gold;
+        }
+
+        .clock{
+            margin: 0px;
+            font-size: 28px;
+        }
+
+        .clock-name{
+            margin: 0px;
+            font-size: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 139px;
+        }
 
         /* Phone */
         @Media only screen and (max-width: 600px)
@@ -44,7 +97,7 @@
 </head>
 <body>
     <div class="add">
-        <picture>
+        <picture class="Jashvare">
             <source media="(min-width: 1440px)" srcset="./assest/add-1440.svg">
             <source media="(min-width: 1240px)" srcset="./assest/add-1240.svg">
             <source media="(min-width: 950px)" srcset="./assest/add-950.svg">
@@ -52,6 +105,17 @@
             <source media="(min-width: 360px)" srcset="./assest/add-360.svg">
             <img class="addPicture" src="./assest/add-smallest.svg" alt="دشواره شگفت انگیز"/>
         </picture>
+        <div class="Timer">
+            <div class="time-number">
+                <p class="clock">00:00:00:11</p>
+                <p class="clock-name">
+                    <span>ثانبیه</span>
+                    <span>دقیقه</span>
+                    <span>ساعت</span>
+                    <span>روز</span>
+                </p>
+            </div>
+        </div>
     </div>
         <nav class="navbar">
             <div class="navbar-div">
