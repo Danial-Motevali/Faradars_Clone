@@ -10,36 +10,10 @@
             margin: 0;
         }    
 
-        .add{
-            height: 55px;
-            width: 100%;
-        }
-
-        .navbar-div{
-            background-color: red;
-            height: inherit;
-        }
-
-        .addPicture{
-            height: 100%;
-            width: 100%;
-        }
-
         /* Phone */
         @Media only screen and (max-width: 600px)
         {
-            .add{
-                height: 96px;
-            }
 
-            .addPicture{
-                position: relative;
-                right: 577px;
-            }
-
-            .navbar{
-                height: 98px;
-            }
         }
 
         /* Portait tablest & Large Phone */
@@ -57,14 +31,7 @@
         /* laptops/desktop */
         @Media only screen and (min-width: 992px)
         {
-            .navbar{
-                height: 60px;
-            }
 
-            /* .addPicture{
-                position: relative;
-                right: 200px;
-            } */
         }
 
         /* large laptops and desktop */
@@ -78,9 +45,12 @@
 <body>
     <div class="add">
         <picture>
-            <source media="(min-width: 650px)" srcset="./assest/5.svg">
-            <source media="(min-width: 465px)" srcset="./assest/6.svg">
-            <img class="addPicture" src="./assest/6.svg" alt="picture"/>
+            <source media="(min-width: 1440px)" srcset="./assest/add-1440.svg">
+            <source media="(min-width: 1240px)" srcset="./assest/add-1240.svg">
+            <source media="(min-width: 950px)" srcset="./assest/add-950.svg">
+            <source media="(min-width: 600px)" srcset="./assest/add-600.svg">
+            <source media="(min-width: 360px)" srcset="./assest/add-360.svg">
+            <img class="addPicture" src="./assest/add-smallest.svg" alt="دشواره شگفت انگیز"/>
         </picture>
     </div>
         <nav class="navbar">
