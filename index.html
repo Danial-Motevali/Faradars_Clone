@@ -260,7 +260,30 @@
             z-index: 2;
         }
 
+        .courses{
+            width: 78%;
+            margin: auto;
+            margin-top: 8%;
+        }
 
+        .course-section{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .course-icon-section{
+            display: grid;
+            grid-template-rows: 1fr 1fr;   
+            grid-auto-flow: column;   
+            grid-auto-columns: auto;
+        }
+
+        .course-icon-animation:hover{
+            transform: scale(1.2);
+            color: blue;
+        }
 
         /* Phone */
         @Media only screen and (max-width: 600px)
@@ -419,6 +442,78 @@
                 دانشجو
             </p>
         </div>   
+    </div>
+    <div class="courses">
+        <div class="course-section" >
+            <p class="courses-title">موضوعات و دسته‌بندی‌های آموزشی منتخب</p>
+            <a class="more-courses" href="#">همه دسته بندی ها</a>
+        </div>
+        <div class="course-icon-section">
+            <div>
+                <img class="course-icon-animation" src="./assest/برنامه نویسی.svg"/>
+                <p>برنامه نویسی</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/امار و داده کاوی.svg" />
+                <p>آمار و داده کاوی</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/مهندسی مکانیک.svg" />
+                <p>مهندسی مکانیک</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/پایتون.svg" />
+                <p>پایتون</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/بورس.svg" />
+                <p>بورس و سهام</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/هنر.svg" />
+                <p>هنر</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/ریاضیات.svg" />
+                <p>ریاضیات</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/هوش مصنویی.svg" />
+                <p>هوش مصنوعی</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/اکسل.svg" />
+                <p>اکسل</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/مهندسی برق.svg" />
+                <p>مهندسی برق</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/مهندسی نرم افزار.svg" />
+                <p>مهندسی نرم افزار</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/طراحی.svg" />
+                <p>طراحی گرافیک</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/مهندسی عمران.svg" />
+                <p>مهندسی عمران</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/مهندسی معماری.svg" />
+                 <p>مهندسی معماری</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/زبان انگلیسی.svg" />
+                <p>زبان انگلیسی</p>
+            </div>
+            <div>
+                <img class="course-icon-animation" src="./assest/مهندسی صنایع.svg" />
+                <p>مهندسی صنایع</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
