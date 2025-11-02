@@ -273,12 +273,13 @@
             justify-content: space-between;
         }
 
-        .course-icon-section{
+        /* .course-icon-section{
             display: grid;
-            grid-template-rows: 1fr 1fr;   
-            grid-auto-flow: column;   
+            grid-template-rows: 1fr 1fr;
+            grid-auto-flow: column;
             grid-auto-columns: auto;
-        }
+            justify-items: center;
+        } */
 
         .course-icon-animation:hover{
             transform: scale(1.2);
@@ -287,6 +288,8 @@
 
         .course-animation-div{
             background-color: #c1bbbbab;
+            display: flex;
+            justify-content: center;
         }
 
         .courses-title{
@@ -457,12 +460,58 @@
                 margin-bottom: 3%;
             }
 
-            .course-icon-animation{
+            /* .course-icon-animation{
                 width: 62%;
-            }
+            } */
 
             .img-background{
-                margin-bottom: 16%;
+                /* margin-bottom: 16%; */
+                margin-top: 10%;
+            }
+
+            .courses{
+                width: 65%;
+                margin-top: 6%;
+            }
+
+            .course-animation-div{
+                width: 112%;
+                padding: 23% 9%;
+            }
+
+            .course-icon-section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px; /* spacing between items */
+            }
+
+            .img-background {
+                width: 150px;      /* set consistent width */
+                height: 150px;     /* set consistent height */
+                background-color: #f7f7f7;
+                border-radius: 12px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            .course-animation-div {
+                width: 80px;       /* image area size */
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .course-icon-animation {
+                width: 100%;
+                height: 100%;
+                object-fit: contain; /* makes images scale inside the box nicely */
             }
         }
 
