@@ -273,21 +273,12 @@
             justify-content: space-between;
         }
 
-        /* .course-icon-section{
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-            grid-auto-flow: column;
-            grid-auto-columns: auto;
-            justify-items: center;
-        } */
-
         .course-icon-animation:hover{
             transform: scale(1.2);
             color: blue;
         }
 
         .course-animation-div{
-            background-color: #c1bbbbab;
             display: flex;
             justify-content: center;
         }
@@ -317,6 +308,55 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        .course-icon-section{
+            display: grid;
+            grid-auto-flow: column;            /* آیتم‌ها ستونی پر می‌شوند -> چیده شدن در چند ستون */
+            grid-template-rows: repeat(2, auto); /* دقیقا ۲ سطر */
+            gap: 20px;                         /* فاصله بین آیتم‌ها */
+            align-items: center;
+            justify-content: start;
+            direction: rtl;                    /* برای متن فارسی */
+            padding: 10px;
+            white-space: nowrap;
+        }
+
+        .img-background-box{
+            text-align: center;
+            /* background: #f9f9f9; */
+            border-radius: 12px;
+            padding: 12px;
+            /* box-shadow: 0 2px 6px rgba(0,0,0,0.08); */
+            width: 140px;                   
+            box-sizing: border-box;
+        }
+
+        .course-animation-div img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 8px;
+        }
+
+        .img-background{
+            display:flex; 
+            justify-content:center; 
+            align-items:center;
+        }
+
+        .img-background-box p {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.1;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
         }
 
         /* Phone */
@@ -381,6 +421,17 @@
 
             .Timer{
                 right: 83%;
+            }
+
+            .course-icon-section {
+                grid-auto-flow: column;
+                gap: 34px;
+            }
+
+            .img-background-box 
+            { 
+                width: 109%;
+                height: 143%;
             }
         }
 
@@ -466,7 +517,11 @@
 
             .img-background{
                 /* margin-bottom: 16%; */
-                margin-top: 10%;
+                /* margin-top: 10%; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
             }
 
             .courses{
@@ -476,19 +531,13 @@
 
             .course-animation-div{
                 width: 112%;
-                padding: 23% 9%;
-            }
-
-            .course-icon-section {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px; /* spacing between items */
             }
 
             .img-background {
-                width: 150px;      /* set consistent width */
-                height: 150px;     /* set consistent height */
+                /* width: 150px;    
+                height: 150px;      */
+                width: 113%;
+                height: 60%;
                 background-color: #f7f7f7;
                 border-radius: 12px;
                 display: flex;
@@ -649,99 +698,133 @@
             <a class="more-courses" href="#">همه دسته بندی ها</a>
         </div>
         <div class="course-icon-section">
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/برنامه نویسی.svg"/>
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/برنامه نویسی.svg"/>
+                    </div>
                 </div>
                 <p>برنامه نویسی</p>
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/امار و داده کاوی.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/امار و داده کاوی.svg" />
+                    </div>
                 </div>
                 <p>آمار و داده کاوی</p>
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/مهندسی مکانیک.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/مهندسی مکانیک.svg" />
+                    </div>
                 </div>
                 <p>مهندسی مکانیک</p>
+
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/پایتون.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/پایتون.svg" />
+                    </div>
                 </div>
                 <p>پایتون</p>
+
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/بورس.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/بورس.svg" />
+                    </div>
                 </div>
                 <p>بورس و سهام</p>
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/هنر.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/هنر.svg" />
+                    </div>
                 </div>
                 <p>هنر</p>
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/ریاضیات.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/ریاضیات.svg" />
+                    </div>
                 </div>
                 <p>ریاضیات</p>
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/هوش مصنویی.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/هوش مصنویی.svg" />
+                    </div>
                 </div>
                 <p>هوش مصنوعی</p>
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/اکسل.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/اکسل.svg" />
+                    </div>
                 </div>
                 <p>اکسل</p>
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/مهندسی برق.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/مهندسی برق.svg" />
+                    </div>
                 </div>
                 <p>مهندسی برق</p>
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/مهندسی نرم افزار.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/مهندسی نرم افزار.svg" />
+                    </div>
                 </div>
                 <p>مهندسی نرم افزار</p>
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/طراحی.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/طراحی.svg" />
+                    </div>
                 </div>
                 <p>طراحی گرافیک</p>
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/مهندسی عمران.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/مهندسی عمران.svg" />
+                    </div>
                 </div>
                 <p>مهندسی عمران</p>
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/مهندسی معماری.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/مهندسی معماری.svg" />
+                    </div>
                 </div>
-                 <p>مهندسی معماری</p>
+                <p>مهندسی معماری</p>
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/زبان انگلیسی.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/زبان انگلیسی.svg" />
+                    </div>
                 </div>
                 <p>زبان انگلیسی</p>
             </div>
-            <div class="img-background">
-                <div class="course-animation-div">
-                    <img class="course-icon-animation" src="./assest/مهندسی صنایع.svg" />
+            <div class="img-background-box">
+                <div class="img-background">
+                    <div class="course-animation-div">
+                        <img class="course-icon-animation" src="./assest/مهندسی صنایع.svg" />
+                    </div>
                 </div>
                 <p>مهندسی صنایع</p>
             </div>
